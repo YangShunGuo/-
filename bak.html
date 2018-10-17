@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米官网</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        body{
+            color: #333;
+            font-size: 12px;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .img_s01{
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            color: #333333;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #ff6700;
+        }
+        .content{
+            width:1230px;
+            margin: 0px auto;
+        }
+        .float_left{
+            float: left;
+        }
+        .float_right{
+            float: right;
+        }
+        ul{
+            list-style:none ;
+        }
+        .clear{
+            clear: both;
+        }
+      .top_nav{
+          background-color: #333;
+          height: 40px;
+          line-height:40px;
+      }
+        .top_nav a{
+            color: #a6a6a6;
+            padding:0px 3px;
+            display: block;
+            float: left;
+        }
+        .top_nav a:hover{
+            color: #dfdfdf;
+        }
+        .car_shopp{
+            padding: 0px 10px;
+            display: block;
+            position: relative;
+        }
+        .car_shopp:hover{
+            color: #ff6700;
+            background-color: #ffffff;
+        }
+        .car_shopp:hover{
+            color: #ff6700;
+            background-color: #ffffff;
+        }
+        .fd_car{
+            position: absolute;
+            background-color: white;
+            border:1px solid #333333;
+            right: 0;
+            width: 200px;
+            text-align: center;
+            display: none;
+        }
+        .car_shopp:hover .fd_car{display: block}
+        .top{
+            padding:15px 0px;
+        }
+        .logo{
+            width: 235px;
+            height: 70px;
+        }
+        .nav li{
+            float: left;
+            height: 70px;
+            line-height: 70px;
+            padding:0px 10px;
+            font-size: 16px;
+        }
+        .search{
+            position: relative;
+        }
+        .in_search{
+            border: solid 1px #e0e0e0;
+            width: 250px;
+            height: 40px;
+            padding-left:8px;
+            color: #8c8c8c;
+            float: left;
+        }
+        .in_search:hover{
+            border: solid 1px #ececec;
+        }
+        .in_search:focus{
+            border:#ff6700 1px solid;
+        }
+        .fd_search{
+            position: absolute;
+            right:60px;
+            top:12px;
+        }
+        .fd_search a{
+            background-color: #dfdfdf;
+            padding:4px 8px;
+        }
+        .btn_search{
+            display: block;
+            float: right;
+            width: 30px;
+            background-color: #ff6700;
+            color: #fff;
+            text-align: center;
+            height: 42px;
+            line-height: 42px;
+            padding: 0px 8px;
+        }
+        .btn_search:hover{
+            color: white;
+        }
+        .fl_list{
+            width:230px;
+            height:443px;
+            float: left;
+            background-color: #404040;
+            padding-top:17px;
+        }
+        .fl_list a{
+            display: block;
+            height: 42px;
+            line-height: 42px;
+            padding-left:27px;
+            color: #fff;
+            font-size:14px;
+        }
+        .fl_list a:hover{
+            background-color:#ff6700;
+        }
+        .ad_banner{
+            float: right;
+            width: 1000px;
+            height:460px;
+        }
+        .ad_banner_list{
+            margin-top:15px;
+        }
+        .ad_banner_list li{
+            float: left;
+            width: 75px;
+            height: 85px;
+            border: 1px solid #2a2a2a;
+        }
+        .ad_banner_list li i{
+            width:35px;
+            height: 42px;
+            display: block;
+            margin: 10px auto;
+        }
+        .ad_banner_list li span{
+            color: #8c8c8c;
+            text-align: center;
+            display: block;
+        }
+        .margin_15{
+            margin-right:15px;
+        }
+        .list li{
+                 float: left;
+                 margin-top: 10px;
+                 margin-left: 10px;
+            -webkit-transform: translate3d(0, -2px, 0);
+            transform: translate3d(0, -2px, 0);
+             }
+        .list li:hover{
+            -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            /*transform: translate3d(0, -2px, 0);*/
+
+            /*/*
+              transition-property: all;
+              transition-timing-function: ease;
+              transition-delay: 0s;
+              transition:all 0.2s linear*/
+            -webkit-transition: all 0.25s linear;
+            -moz-transition: all 0.25s linear;
+            -ms-transition:  all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition:  all 0.25s linear;
+
+
+              */
+            /*投影 transition: box-shadow（样式式属性，如宽，高） 2s(如宽高的过渡);*/
+
+            -webkit-box-shadow: 0px 10px 15px #85bfff;
+            -moz-box-shadow:  0px 10px 15px #85bfff;
+            box-shadow: 0px 10px 15px #85bfff;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="top_nav">
+   <div class="content">
+       <div class="float_left">
+           <a href="#">小米商城</a>
+           <a>|</a>
+           <a href="#">MIUI</a>
+           <a>|</a>
+           <a href="#">IoT</a>
+           <a>|</a>
+           <a href="#">云服务</a>
+           <a>|</a>
+           <a href="#">金融</a>
+           <a>|</a>
+           <a href="">有品</a>
+           <a>|</a>
+           <a href="">小爱开放平台</a>
+           <a>|</a>
+           <a href="#">政企服务</a>
+           <a>|</a>
+           <a href="#">Select Region</a>
+       </div>
+       <div class="float_right">
+          <a href="#">登录</a>
+           <a>|</a>
+           <a href="#">注册</a>
+           <a>|</a>
+           <a href="#">消息通知</a>
+           <a href="#">
+               <span class="car_shopp">购物车 (0)
+                   <div class="fd_car">
+                       sdfdsf
+                   </div>
+               </span>
+           </a>
+       </div>
+   </div>
+</div>
+<!--导航-->
+<div class="content top">
+    <div class="logo float_left">
+       <img src="image/logo.jpg">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">电视</a></li>
+        </ul>
+    </div>
+    <div class="search float_right">
+        <div class="fd_search"><a href="#">手机</a> <a href="#">电视</a> </div>
+        <input class="in_search" type="text">
+        <a class="btn_search" href="#">搜索</a>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--分类与大图切换-->
+<div class="content">
+    <div class="fl_list">
+        <ul>
+            <li><a href="#">手机<i class="float_right" style="padding-right: 20px;"> > </i></a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">手机</a></li>
+        </ul>
+    </div>
+    <div class="ad_banner">
+        <img src="image/xmad_15311087505587_ZrTIc.jpg" width="100%" height="100%">
+    </div>
+    <div class="clear"></div>
+    <div class="ad_banner_list">
+        <div class="float_left margin_15" style="width: 236px; background-color: #1d1d1d">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i>
+                          <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>
+                            <img class="img_s01" src="image/cellphone_97px_1166714_easyicon.net.png">
+                        </i>
+                        <span>手机</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="float_left margin_15" style="width: 316px; height: 172px;"><img class="img_s01" src="image/xmad_15302595556283_DAjhs.jpg"></div>
+        <div class="float_left margin_15" style="width: 316px; height: 172px;"><img class="img_s01" src="image/xmad_15302595556283_DAjhs.jpg"></div>
+        <div class="float_left" style="width: 316px; height: 172px;"><img class="img_s01" src="image/xmad_15302595556283_DAjhs.jpg"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="content">
+    <div class="list">
+        <ul>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+            <li><a href="#"><img src="image/QQ截图20180711145311.jpg" height="170" width="236"/></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
